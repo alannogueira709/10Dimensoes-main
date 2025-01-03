@@ -1,9 +1,9 @@
 //Versão do Codigo
 const char* version = "V1.0";
 //WIFI
-const char* ssid = "10D";
-const char* password = "12345678";
-const char* host = "Carrinho";
+const char* ssid = "**********";
+const char* password = "**********";
+const char* host = "*********";
 
 
 
@@ -16,7 +16,7 @@ const char* host = "Carrinho";
 bool MQTT_Connected = false;                    
 WiFiClient espClient;                           
 PubSubClient client(espClient);                 
-IPAddress mqtt_server(192, 168, 1, 100);
+IPAddress mqtt_server("Your IP Address");
 
 //MSG
 char mensagem[12];
